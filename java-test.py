@@ -32,11 +32,13 @@ def intro():
 intro()
 
 if st.button('Download JAVA'):
+    os.system("java -version")
     os.system("wget https://download.java.net/openjdk/jdk11/ri/openjdk-11+28_linux-x64_bin.tar.gz")
     os.system("tar zxvf openjdk-11+28_linux-x64_bin.tar.gz")
     os.system("export JAVA_HOME=jdk-11")
     os.system("export PATH=$PATH:$JAVA_HOME/bin")
     os.system("echo $JAVA_HOME")
     os.system("echo $PATH")
+    os.system("java -version")
 
 	
